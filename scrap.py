@@ -1,4 +1,5 @@
 from selenium import webdriver
+from dotenv import chaat_id , token_id
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
@@ -9,8 +10,8 @@ import requests
 
 # Define the path to the ChromeDriver executable (use raw string to avoid backslash issues)
 PATH = r"'C:\Users\nsmhadj\Downloads\chromedriver.exe"
-TOKEN = '7502378915:AAHEBjKaJANJUIckUtUoNFjoMYHn_joG0VE'
-chat_id = '5699770134'
+TOKEN = token_id
+chat_id = chaat_id
 
 # Start ChromeDriver service
 service = Service(PATH)
